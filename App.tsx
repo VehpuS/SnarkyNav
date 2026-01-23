@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Screen } from './src/ui/Screen';
+import { ThemedText } from './src/ui/ThemedText';
+import { Button } from './src/ui/Button';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Screen>
+      <ThemedText variant="h1" className="px-6 pt-6">
+        SnarkyNav
+      </ThemedText>
+      <ThemedText className="px-6 pt-2 text-sm">
+        We only speak up when you ignore the obvious.
+      </ThemedText>
+      <Button
+        label="Boot up"
+        onPress={() => {}}
+        variant="solid"
+        testID="boot-up-button"
+        className="mx-6 mt-6"
+      />
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
