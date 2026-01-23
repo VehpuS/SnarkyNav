@@ -1,0 +1,18 @@
+name: Feature Request (AI Optimized)
+description: Create a task for the AI Agent
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: The Goal
+      description: Describe the feature in plain English.
+      placeholder: "As a user, I want the GPS to insult me when I speed…"
+    validations:
+      required: true
+  - type: textarea
+    id: technical_constraints
+    attributes:
+      label: Technical Constraints
+      description: Tell the AI which files/tools to use.
+      placeholder: "Use the 'SoundManifest' pattern. Do not add new libraries."
+      value: "Check '.github/copilot-instructions.md' and 'AGENT.md' for styling and audio rules."
