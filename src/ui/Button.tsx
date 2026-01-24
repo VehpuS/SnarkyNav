@@ -12,6 +12,7 @@ type ButtonProps = {
   icon?: React.ReactNode;
   className?: string;
   testID?: string;
+  accessibilityLabel?: string;
 };
 
 const variantClasses: Record<ButtonVariant, string> = {
@@ -34,10 +35,12 @@ export function Button({
   icon,
   className,
   testID,
+  accessibilityLabel,
 }: ButtonProps) {
   return (
     <Pressable
       accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel ?? label}
       className={`rounded-lg px-4 py-3 ${variantClasses[variant]} ${disabled ? 'opacity-50' : ''} ${className ?? ''}`.trim()}
       onPress={onPress}
       disabled={disabled}
