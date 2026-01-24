@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "base_path": "./assets/audio/",
+  "events": {
+    "BOOT_UP": {
+      "files": [],
+      "fallback_text": [
+        "Booting up. Try not to make me regret this.",
+        "SnarkyNav online. Let's see how long you can follow directions."
+      ],
+      "intensity": "low"
+    }
+  }
+}
