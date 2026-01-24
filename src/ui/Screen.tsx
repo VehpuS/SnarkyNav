@@ -1,6 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
-import { StatusBar } from 'react-native';
+import { StatusBar, View } from 'react-native';
 
 type ScreenProps = {
   children: React.ReactNode;

@@ -9,6 +9,11 @@ describe('Button', () => {
       tree = renderer.create(<Button label="Press me" onPress={() => undefined} />).toJSON();
     });
 
-    expect(tree).toBeNull();
+    expect(tree).not.toBeNull();
+    const root = Array.isArray(tree) ? tree[0] : tree;
+    const labelNode = root?.children?.find(
+      (child) => typeof child === 'object' && child?.type === 'Text'
+    ) as renderer.ReactTestRendererJSON | undefined;
+    expect(labelNode?.children).toContain('Press me');
   });
 });

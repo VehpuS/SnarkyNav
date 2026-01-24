@@ -13,7 +13,9 @@ export default function App() {
       </ThemedText>
       <Button
         label="Boot up"
-        onPress={() => {}}
+        onPress={() => {
+          console.log('Boot up button pressed; BOOT_UP audio event not yet implemented.');
+        }}
         variant="solid"
         testID="boot-up-button"
         className="mx-6 mt-6"

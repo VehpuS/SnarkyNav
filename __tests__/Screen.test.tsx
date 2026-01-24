@@ -8,6 +8,6 @@ describe('Screen', () => {
     act(() => {
       tree = renderer.create(<Screen>Hi</Screen>).toJSON();
     });
-    expect(tree).toBeNull();
+    expect(tree).not.toBeNull();
   });
 });

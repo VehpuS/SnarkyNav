@@ -14,8 +14,8 @@ describe('ThemedText', () => {
       caption = renderer.create(<ThemedText variant="caption">Hello</ThemedText>).toJSON();
     });
 
-    expect(h1).toBeNull();
-    expect(body).toBeNull();
-    expect(caption).toBeNull();
+    expect(h1).not.toBeNull();
+    expect(body).not.toBeNull();
+    expect(caption).not.toBeNull();
   });
 });
