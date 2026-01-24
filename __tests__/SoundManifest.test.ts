@@ -1,4 +1,4 @@
-import manifest from '../assets/sound_manifest.json';
+import * as manifest from '../assets/sound_manifest.json';
 
 describe('sound manifest', () => {
   it('parses BOOT_UP event', () => {
