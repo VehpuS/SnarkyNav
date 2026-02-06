@@ -9,5 +9,9 @@ describe('audioUtils', () => {
   it('selects from available entries', () => {
     expect(pickAudioFile(['one'])).toBe('one');
     expect(pickFallbackText(['hello'])).toBe('hello');
+    const fileOptions = ['one', 'two', 'three'];
+    const textOptions = ['alpha', 'beta', 'gamma'];
+    expect(fileOptions).toContain(pickAudioFile(fileOptions));
+    expect(textOptions).toContain(pickFallbackText(textOptions));
   });
 });

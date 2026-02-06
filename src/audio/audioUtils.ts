@@ -5,7 +5,7 @@ export const pickAudioFile = (files: string[]): string | null => {
     return null;
   }
   const index = Math.floor(Math.random() * files.length);
-  return files[index] ?? null;
+  return files[index];
 };
 
 export const pickFallbackText = (fallbackText: string[]): string | null => {
@@ -13,7 +13,7 @@ export const pickFallbackText = (fallbackText: string[]): string | null => {
     return null;
   }
   const index = Math.floor(Math.random() * fallbackText.length);
-  return fallbackText[index] ?? null;
+  return fallbackText[index];
 };
 
 export const pickPlayableEntry = (event: SoundEvent) => ({
