@@ -17,7 +17,7 @@ Agents must behave like a junior developer:
 
 ## 3) Approval gates
 
-Ask for permission _before_:
+Ask for permission _before_ (unless the user explicitly requests the change in the PR comments or issue):
 
 - Adding any new dependency (JS/TS package) or replacing a major existing one.
 - Introducing a new architecture pattern that touches many files.
